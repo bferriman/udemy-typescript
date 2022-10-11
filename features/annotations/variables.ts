@@ -40,3 +40,13 @@ for (let i = 0; i < words.length; i++) {
     foundWord = true;
   }
 }
+
+// 3) variable whose type cannot be inferred
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean | number = false;
+// we want numberAboveZero to be false if there are none in the array, or first number found if there is one
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
