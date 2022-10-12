@@ -1,3 +1,8 @@
+// Method Modifiers:
+// public: Method can be called outside of the class. This is the default if no modifier is specified.
+// private: Method can only be called inside of the class.
+// protected: Method can only be called inside of the class or its sub-classes.
+
 class Vehicle {
   constructor(public color: string) {}
 
