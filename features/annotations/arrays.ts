@@ -9,13 +9,13 @@ const carsByMake = [
 ];
 
 // Help with inference when extracting values
-const car = carMakers[2];
+const carBrand = carMakers[2];
 const myCar = carMakers.pop();
 
 // Help prevent adding incompatible values
 carMakers.push(10);
 
-// Help with map, forEach, etc.
+// Help with map, forEach, etc. - because TS knows car is a string, it can offer autocomplete for string functions when writing the return statement
 carMakers.map((car: string): string => {
   return car.toUpperCase();
 });

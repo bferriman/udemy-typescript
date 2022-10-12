@@ -18,6 +18,7 @@ const logger = (message: string): void => {
   console.log(message);
 };
 
+// only use never when there is no chance of reaching the end of a function
 const throwError = (message: string): never => {
   throw new Error(message);
 };
